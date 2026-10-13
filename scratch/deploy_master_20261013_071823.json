@@ -1,0 +1,132 @@
+[
+  {
+    "name": "keymgr_dpe_smoke",
+    "job_type": "RunTest",
+    "target": "run",
+    "backend": null,
+    "resources": {
+      "QUESTA": 1
+    },
+    "seed": 1,
+    "full_name": "keymgr_dpe:0.keymgr_dpe_smoke.1",
+    "qual_name": "0.keymgr_dpe_smoke.1",
+    "block": {
+      "name": "keymgr_dpe",
+      "variant": "",
+      "commit": "7d1ca7e858f4e81354aa3e4252a6fa500e6fc31c",
+      "commit_short": "7d1ca7e858",
+      "dirty": false,
+      "branch": "master",
+      "url": "",
+      "revision_info": "GitHub Revision: [`7d1ca7e858`](https://github.com/lowrisc/opentitan/tree/7d1ca7e858f4e81354aa3e4252a6fa500e6fc31c)"
+    },
+    "tool": {
+      "name": "questa",
+      "version": ""
+    },
+    "workspace_cfg": {
+      "timestamp": "20261013_071823",
+      "project_root": "/home/kthakkar/opentitan_new/opentitan",
+      "scratch_root": "/home/kthakkar/opentitan_new/opentitan/scratch",
+      "scratch_path": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa"
+    },
+    "dependencies": [
+      "keymgr_dpe:default"
+    ],
+    "needs_all_dependencies_passing": true,
+    "weight": 1,
+    "timeout_mins": 60.0,
+    "cmd": "make -f /home/kthakkar/opentitan_new/opentitan/hw/dv/tools/dvsim/sim.mk run build_seed=None post_run_cmds='' pre_run_cmds='' proj_root=/home/kthakkar/opentitan_new/opentitan run_cmd='/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/qrun -simulate' run_dir=/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/0.keymgr_dpe_smoke/latest run_opts='+cdc_instrumentation_enabled=1 +UVM_NO_RELNOTES +UVM_VERBOSITY=UVM_LOW -outdir /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/qrun.out -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -sv_seed 1 -suppress vsim-8323 -permit_unmatched_virtual_intf +UVM_TESTNAME=keymgr_dpe_base_test +UVM_TEST_SEQ=keymgr_dpe_smoke_vseq -do /home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl' seed=1 sw_build_cmd='python /home/kthakkar/opentitan_new/opentitan/util/py/scripts/build_sw_collateral_for_sim.py --sw-images='\"'\"''\"'\"' --sw-build-opts='\"'\"''\"'\"' --sw-build-device= --seed=1 --run-dir=/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/0.keymgr_dpe_smoke/latest' sw_build_device='' sw_build_opts='' sw_images='' uvm_test=keymgr_dpe_base_test uvm_test_seq=keymgr_dpe_smoke_vseq",
+    "exports": {
+      "dv_root": "/home/kthakkar/opentitan_new/opentitan/hw/dv",
+      "self_dir": "/home/kthakkar/opentitan_new/opentitan/hw/ip/keymgr_dpe/dv",
+      "SIMULATOR": "questa",
+      "GUI": "0",
+      "GUI_DEBUG": "0",
+      "WAVES": "none",
+      "DUT_TOP": "keymgr_dpe",
+      "TB_TOP": "tb",
+      "dut_instance": "tb.dut",
+      "SCRATCH_PATH": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa",
+      "proj_root": "/home/kthakkar/opentitan_new/opentitan"
+    },
+    "dry_run": false,
+    "interactive": false,
+    "odir": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/0.keymgr_dpe_smoke/latest",
+    "renew_odir": true,
+    "log_path": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/0.keymgr_dpe_smoke/latest/run.log",
+    "pass_patterns": [
+      "^TEST PASSED (UVM_)?CHECKS$"
+    ],
+    "fail_patterns": [
+      "^UVM_ERROR\\s[^:].*$",
+      "^UVM_FATAL\\s[^:].*$",
+      "^UVM_WARNING\\s[^:].*$",
+      "^Assert failed: ",
+      "^\\s*Offending '.*'",
+      "^TEST FAILED (UVM_)?CHECKS$",
+      "^Error:.*$",
+      "^\\*\\* Error.*$"
+    ]
+  },
+  {
+    "name": "default",
+    "job_type": "CompileSim",
+    "target": "build",
+    "backend": null,
+    "resources": {
+      "QUESTA": 1
+    },
+    "seed": null,
+    "full_name": "keymgr_dpe:default",
+    "qual_name": "default",
+    "block": {
+      "name": "keymgr_dpe",
+      "variant": "",
+      "commit": "7d1ca7e858f4e81354aa3e4252a6fa500e6fc31c",
+      "commit_short": "7d1ca7e858",
+      "dirty": false,
+      "branch": "master",
+      "url": "",
+      "revision_info": "GitHub Revision: [`7d1ca7e858`](https://github.com/lowrisc/opentitan/tree/7d1ca7e858f4e81354aa3e4252a6fa500e6fc31c)"
+    },
+    "tool": {
+      "name": "questa",
+      "version": ""
+    },
+    "workspace_cfg": {
+      "timestamp": "20261013_071823",
+      "project_root": "/home/kthakkar/opentitan_new/opentitan",
+      "scratch_root": "/home/kthakkar/opentitan_new/opentitan/scratch",
+      "scratch_path": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa"
+    },
+    "dependencies": [],
+    "needs_all_dependencies_passing": true,
+    "weight": 5,
+    "timeout_mins": 60.0,
+    "cmd": "make -f /home/kthakkar/opentitan_new/opentitan/hw/dv/tools/dvsim/sim.mk build build_cmd='/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/qrun -optimize' build_dir=/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default build_opts='+define+UVM +define+UVM_NO_DEPRECATED +define+UVM_REGEX_NO_DPI +define+UVM_REG_ADDR_WIDTH=32 +define+UVM_REG_DATA_WIDTH=32 +define+UVM_REG_BYTENABLE_WIDTH=4 +define+SIMULATION +define+DUT_HIER=tb.dut -timescale 1ns/1ps -outdir /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/qrun.out -uvm -uvmhome /cadtools/mentor/Questa_2025.2/questasim/verilog_src/uvm-1.2 +incdir+/cadtools/mentor/Questa_2025.2/questasim/verilog_src/uvm-1.2/src /cadtools/mentor/Questa_2025.2/questasim/verilog_src/uvm-1.2/src/uvm_pkg.sv -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -mfcu -f /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/lowrisc_dv_keymgr_dpe_sim_0.1.scr -top keymgr_dpe_bind -top keymgr_dpe_cov_bind -top sec_cm_prim_count_bind -top sec_cm_prim_sparse_fsm_flop_bind -top sec_cm_prim_onehot_check_bind -top tb -voptargs=\"+acc=nr\"' post_build_cmds='' post_build_opts='' pre_build_cmds='' proj_root=/home/kthakkar/opentitan_new/opentitan sv_flist_gen_cmd=fusesoc sv_flist_gen_dir=/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work sv_flist_gen_opts='--cores-root /home/kthakkar/opentitan_new/opentitan/hw run --mapping=lowrisc:prim_generic:all:0.1 --target=sim --work-root=/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work --setup lowrisc:dv:keymgr_dpe_sim:0.1'",
+    "exports": {
+      "dv_root": "/home/kthakkar/opentitan_new/opentitan/hw/dv",
+      "self_dir": "/home/kthakkar/opentitan_new/opentitan/hw/ip/keymgr_dpe/dv",
+      "SIMULATOR": "questa",
+      "GUI": "0",
+      "GUI_DEBUG": "0",
+      "WAVES": "none",
+      "DUT_TOP": "keymgr_dpe",
+      "TB_TOP": "tb",
+      "dut_instance": "tb.dut",
+      "SCRATCH_PATH": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa",
+      "proj_root": "/home/kthakkar/opentitan_new/opentitan"
+    },
+    "dry_run": false,
+    "interactive": false,
+    "odir": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default",
+    "renew_odir": false,
+    "log_path": "/home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/build.log",
+    "pass_patterns": [],
+    "fail_patterns": [
+      "^## \\*\\* Error.*$",
+      "^\\*\\* Error.*$"
+    ]
+  }
+]

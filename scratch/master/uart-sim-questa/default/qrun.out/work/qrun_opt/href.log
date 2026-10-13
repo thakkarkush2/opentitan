@@ -1,0 +1,40 @@
+BEGIN 3:uart_if:fast__2:work
+    uart_rx :  1:tb:fast:work
+    uart_tx :  1:tb:fast:work
+END 
+BEGIN 3:uart_nf_if:fast__2:work
+    rx_sync_q2 :  1:tb:fast:work
+    rx_enable :  1:tb:fast:work
+    rx_sync :  1:tb:fast:work
+    rx_sync_q1 :  1:tb:fast:work
+END 
+BEGIN 1:prim_onehot_check:fast:work
+    err_o :  1:uart:fast:work
+    unused_assert_connected :  1:uart:fast:work
+END 
+BEGIN 1:uart_core:fast:work
+    rx_sync :  1:tb:fast:work
+    rx_sync_q1 :  1:tb:fast:work
+    rx_sync_q2 :  1:tb:fast:work
+    rx_enable :  1:tb:fast:work
+END 
+BEGIN 1:prim_diff_decode:fast:work
+    gen_async.diff_nd :  1:prim_diff_decode:fast:work
+    gen_async.diff_pd :  1:prim_diff_decode:fast:work
+END 
+BEGIN 3:tl_if:fast__2:work
+    h2d :  1:tb:fast:work
+    d2h :  1:tb:fast:work
+END 
+BEGIN 3:uart_if:fast__1:work
+    uart_clk_period :  1:uart_agent_pkg:fast:work
+END 
+BEGIN 3:alert_if:fast__2:work
+    alert_rx :  1:tb:fast:work
+    alert_tx :  1:tb:fast:work
+END 
+BEGIN_PACKAGE
+BEGIN sec_cm_pkg:work
+    en_sec_cm_cov :  3:prim_onehot_check_if:synth:work 3:prim_onehot_check_if:fast__1:work
+END 
+END_PACKAGE

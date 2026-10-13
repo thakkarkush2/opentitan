@@ -1,0 +1,209 @@
+QuestaSim-64 qrun 2025.2 Utility 2025.05 May 31 2025
+Start time: 12:47:31 on Oct 13,2026
+qrun -simulate "+cdc_instrumentation_enabled=1" "+UVM_NO_RELNOTES" "+UVM_VERBOSITY=UVM_LOW" -outdir /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/qrun.out -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -sv_seed 87132161092048076192433986140323214736321591616138037420059612818644297791390 -suppress vsim-8323 -permit_unmatched_virtual_intf "+UVM_TESTNAME=uart_base_test" "+UVM_TEST_SEQ=uart_smoke_vseq" -do "/home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl" 
+** Note: (qrun-220) '/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-220) '/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Error (suppressible): (vsim-7031) Bad value ("87132161092048076192433986140323214736321591616138037420059612818644297791390") specified for Sv_Seed interpreted as 4294967295.
+# vsim "+cdc_instrumentation_enabled=1" "+UVM_NO_RELNOTES" "+UVM_VERBOSITY=UVM_LOW" -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -sv_seed 87132161092048076192433986140323214736321591616138037420059612818644297791390 -permit_unmatched_virtual_intf "+UVM_TESTNAME=uart_base_test" "+UVM_TEST_SEQ=uart_smoke_vseq" -lib /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/qrun.out/work -c -do "/home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl" -statslog /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/qrun.out/stats_log qrun_opt -suppress 8323 -appendlog -l qrun.log 
+# Start time: 12:47:31 on Oct 13,2026
+# Loading /tmp/kthakkar@VFSRV02_dpi_741194/linux_x86_64_gcc-10.3.0/export_tramp.so
+# //  Questa Sim-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.uart_bind(fast)
+# Loading work.sec_cm_prim_onehot_check_bind(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.clk_rst_if(fast)
+# Loading work.uart_if(fast)
+# Loading work.uart_nf_if(fast)
+# Loading work.pins_if(fast)
+# Loading work.rst_shadowed_if(fast)
+# Loading work.uart_reg_pkg(fast)
+# Loading work.prim_mubi_pkg(fast)
+# Loading work.prim_util_pkg(fast)
+# Loading work.dv_test_status_pkg(fast)
+# Loading work.tl_if(fast)
+# Loading work.alert_if(fast)
+# Loading work.push_pull_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.str_utils_pkg(fast)
+# Loading work.top_pkg(fast)
+# Loading work.bus_params_pkg(fast)
+# Loading work.dv_utils_pkg(fast)
+# Loading work.dv_base_reg_pkg(fast)
+# Loading work.uart_ral_pkg(fast)
+# Loading work.lc_ctrl_reg_pkg(fast)
+# Loading work.lc_ctrl_state_pkg(fast)
+# Loading work.lc_ctrl_pkg(fast)
+# Loading work.prim_alert_pkg(fast)
+# Loading work.sec_cm_pkg(fast)
+# Loading work.dv_base_agent_pkg(fast)
+# Loading work.csr_utils_pkg(fast)
+# Loading work.dv_lib_pkg(fast)
+# Loading work.push_pull_agent_pkg(fast)
+# Loading work.alert_agent_pkg(fast)
+# Loading work.mem_model_pkg(fast)
+# Loading work.prim_secded_pkg(fast)
+# Loading work.tlul_pkg(fast)
+# Loading work.tl_agent_pkg(fast)
+# Loading work.cip_base_pkg(fast)
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.common_ifs_pkg(fast)
+# Loading work.clk_rst_if(fast__2)
+# Loading work.pins_if(fast__2)
+# Loading work.tl_if(fast__2)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_nf_if(fast__2)
+# Loading work.top_racl_pkg(fast)
+# Loading work.uart(fast)
+# Loading work.prim_subreg_pkg(fast)
+# Loading work.uart_reg_top(fast)
+# Loading work.tlul_cmd_intg_chk(fast)
+# Loading work.prim_secded_inv_64_57_dec(fast)
+# Loading work.tlul_data_integ_dec(fast)
+# Loading work.prim_secded_inv_39_32_dec(fast)
+# Loading work.prim_reg_we_check(fast)
+# Loading work.prim_buf(fast)
+# Loading work.prim_onehot_check(fast)
+# Loading work.prim_onehot_check_if(fast__1)
+# Loading work.tlul_rsp_intg_gen(fast)
+# Loading work.prim_secded_inv_64_57_enc(fast)
+# Loading work.tlul_data_integ_enc(fast)
+# Loading work.prim_secded_inv_39_32_enc(fast)
+# Loading work.tlul_adapter_reg(fast)
+# Loading work.tlul_rsp_intg_gen(fast__1)
+# Loading work.tlul_err(fast)
+# Loading work.prim_subreg(fast)
+# Loading work.prim_subreg_arb(fast)
+# Loading work.prim_subreg(fast__1)
+# Loading work.prim_subreg(fast__2)
+# Loading work.prim_subreg_arb(fast__1)
+# Loading work.prim_subreg(fast__3)
+# Loading work.prim_subreg_arb(fast__2)
+# Loading work.prim_subreg_ext(fast)
+# Loading work.prim_subreg(fast__4)
+# Loading work.prim_subreg_arb(fast__3)
+# Loading work.prim_subreg(fast__5)
+# Loading work.prim_subreg_arb(fast__4)
+# Loading work.prim_subreg(fast__6)
+# Loading work.prim_subreg_arb(fast__5)
+# Loading work.prim_subreg_ext(fast__1)
+# Loading work.prim_flop(fast)
+# Loading work.prim_subreg(fast__7)
+# Loading work.prim_subreg_arb(fast__6)
+# Loading work.prim_subreg(fast__8)
+# Loading work.prim_subreg_arb(fast__7)
+# Loading work.prim_subreg(fast__9)
+# Loading work.prim_subreg_arb(fast__8)
+# Loading work.prim_subreg_ext(fast__2)
+# Loading work.prim_subreg(fast__10)
+# Loading work.prim_subreg_arb(fast__9)
+# Loading work.uart_core(fast)
+# Loading work.prim_fifo_sync(fast)
+# Loading work.prim_count_pkg(fast)
+# Loading work.prim_fifo_sync_cnt(fast)
+# Loading work.uart_tx(fast)
+# Loading work.prim_flop_2sync(fast)
+# Loading work.prim_cdc_rand_delay(fast)
+# Loading work.prim_flop(fast__1)
+# Loading work.uart_rx(fast)
+# Loading work.prim_fifo_sync(fast__1)
+# Loading work.prim_fifo_sync_cnt(fast__1)
+# Loading work.prim_intr_hw(fast)
+# Loading work.prim_intr_hw(fast__1)
+# Loading work.prim_alert_sender(fast)
+# Loading work.prim_sec_anchor_buf(fast)
+# Loading work.prim_buf(fast__1)
+# Loading work.prim_diff_decode(fast)
+# Loading work.prim_flop_2sync(fast__1)
+# Loading work.prim_sec_anchor_buf(fast__1)
+# Loading work.prim_buf(fast__2)
+# Loading work.prim_sec_anchor_flop(fast)
+# Loading work.prim_flop(fast__2)
+# Loading work.tlul_assert(fast)
+# Loading work.uart_csr_assert_fpv(fast)
+# Loading work.alert_if(fast__2)
+# Loading work.clk_rst_if(fast__3)
+# ** Warning: (vsim-8637) A modport ('mon_tx_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /uart_agent_pkg::uart_monitor File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_uart_agent_0.1/uart_monitor.sv Line: 49
+# ** Warning: (vsim-8637) A modport ('mon_rx_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /uart_agent_pkg::uart_monitor File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_uart_agent_0.1/uart_monitor.sv Line: 97
+# ** Warning: (vsim-8637) A modport ('drv_rx_mp') should not be used in a hierarchical path.
+#    Time: 0 ps  Iteration: 0  Region: /uart_agent_pkg::uart_driver File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_uart_agent_0.1/uart_driver.sv Line: 66
+# Compiling /tmp/kthakkar@VFSRV02_dpi_741194/linux_x86_64_gcc-10.3.0/exportwrapper.c
+# Loading /tmp/kthakkar@VFSRV02_dpi_741194/linux_x86_64_gcc-10.3.0/vsim_auto_compile.so
+# Loading /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# do /home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl
+# 0
+# 0
+UVM_INFO @ 0 ps: reporter [RNTST] Running test uart_base_test...
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 0 ps  Iteration: 12  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#2213_7feff06a8f3 File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_dv_lib_0/dv_base_env.sv Line: 91
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 0 ps  Iteration: 54  Process: /cip_base_pkg::cip_base_scoreboard #(uart_ral_pkg::uart_reg_block, uart_env_pkg::uart_env_cfg, uart_env_pkg::uart_env_cov)::check_alerts/#FORK#305_7feff06d28e File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 6984 ps  Iteration: 1  Process: /cip_base_pkg::cip_base_scoreboard #(uart_ral_pkg::uart_reg_block, uart_env_pkg::uart_env_cfg, uart_env_pkg::uart_env_cov)::check_alerts/#FORK#305_7feff06d28e File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 1540590 ps  Iteration: 3  Process: /cip_base_pkg::cip_base_scoreboard #(uart_ral_pkg::uart_reg_block, uart_env_pkg::uart_env_cfg, uart_env_pkg::uart_env_cov)::check_alerts/#FORK#305_7feff06d28e File: /home/kthakkar/opentitan_new/opentitan/scratch/master/uart-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+UVM_INFO @  39519878 ps: (uart_tx_rx_vseq.sv:132) uvm_test_top.env.virtual_sequencer [uvm_test_top.env.virtual_sequencer.uart_smoke_vseq] finished run 1/2
+UVM_INFO @ 5314927140 ps: (uart_tx_rx_vseq.sv:132) uvm_test_top.env.virtual_sequencer [uvm_test_top.env.virtual_sequencer.uart_smoke_vseq] finished run 2/2
+UVM_INFO @ 5331457174 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO @ 5331457174 ps: (uvm_report_server.svh:847) [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count :     0 of    50
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/REPORT/CATCHER]     1
+[uvm_test_top.env.virtual_sequencer.uart_smoke_vseq]     2
+
+
+TEST PASSED CHECKS
+ _____         _                                  _ _ 
+|_   _|__  ___| |_   _ __   __ _ ___ ___  ___  __| | |
+  | |/ _ \/ __| __| | '_ \ / _` / __/ __|/ _ \/ _` | |
+  | |  __/\__ \ |_  | |_) | (_| \__ \__ \  __/ (_| |_|
+  |_|\___||___/\__| | .__/ \__,_|___/___/\___|\__,_(_)
+                    |_|                               
+
+** Note: $finish    : /cadtools/mentor/Questa_2025.2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+   Time: 5331457174 ps  Iteration: 69  Instance: /tb
+End time: 12:47:54 on Oct 13,2026, Elapsed time: 0:00:23
+Errors: 1, Warnings: 7
+End time: 12:47:54 on Oct 13,2026, Elapsed time: 0:00:23
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vsim: Errors:   3, Warnings:  21
+  Totals: Errors:   3, Warnings:  21

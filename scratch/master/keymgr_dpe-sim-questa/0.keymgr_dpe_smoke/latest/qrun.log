@@ -1,0 +1,294 @@
+QuestaSim-64 qrun 2025.2 Utility 2025.05 May 31 2025
+Start time: 12:54:55 on Oct 13,2026
+qrun -simulate "+cdc_instrumentation_enabled=1" "+UVM_NO_RELNOTES" "+UVM_VERBOSITY=UVM_LOW" -outdir /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/qrun.out -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -sv_seed 1 -suppress vsim-8323 -permit_unmatched_virtual_intf "+UVM_TESTNAME=keymgr_dpe_base_test" "+UVM_TEST_SEQ=keymgr_dpe_smoke_vseq" -do "/home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl" 
+** Note: (qrun-220) '/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# ** Note: (vsim-220) '/cadtools/mentor/Questa_2025.2/questasim/linux_x86_64/../modelsim.ini' is used as the ini file.
+# vsim "+cdc_instrumentation_enabled=1" "+UVM_NO_RELNOTES" "+UVM_VERBOSITY=UVM_LOW" -sv_lib /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi -sv_seed 1 -permit_unmatched_virtual_intf "+UVM_TESTNAME=keymgr_dpe_base_test" "+UVM_TEST_SEQ=keymgr_dpe_smoke_vseq" -lib /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/qrun.out/work -c -do "/home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl" -statslog /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/qrun.out/stats_log qrun_opt -suppress 8323 -appendlog -l qrun.log 
+# Start time: 12:54:56 on Oct 13,2026
+# Loading /tmp/kthakkar@VFSRV02_dpi_749315/linux_x86_64_gcc-10.3.0/export_tramp.so
+# //  Questa Sim-64
+# //  Version 2025.2 linux_x86_64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.keymgr_dpe_bind(fast)
+# Loading work.keymgr_dpe_cov_bind(fast)
+# Loading work.sec_cm_prim_count_bind(fast)
+# Loading work.sec_cm_prim_sparse_fsm_flop_bind(fast)
+# Loading work.sec_cm_prim_onehot_check_bind(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.keymgr_dpe_if(fast)
+# Loading work.clk_rst_if(fast)
+# Loading work.keymgr_dpe_ctrl_if(fast)
+# Loading work.pins_if(fast)
+# Loading work.rst_shadowed_if(fast)
+# Loading work.keymgr_dpe_reg_pkg(fast)
+# Loading work.keymgr_dpe_pkg(fast)
+# Loading work.kmac_app_if(fast)
+# Loading work.sha3_pkg(fast)
+# Loading work.kmac_pkg(fast)
+# Loading work.prim_util_pkg(fast)
+# Loading work.dv_test_status_pkg(fast)
+# Loading work.tl_if(fast)
+# Loading work.alert_if(fast)
+# Loading work.push_pull_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.str_utils_pkg(fast)
+# Loading work.top_pkg(fast)
+# Loading work.bus_params_pkg(fast)
+# Loading work.dv_utils_pkg(fast)
+# Loading work.dv_base_agent_pkg(fast)
+# Loading work.kmac_app_agent_pkg(fast)
+# Loading work.prim_mubi_pkg(fast)
+# Loading work.dv_base_reg_pkg(fast)
+# Loading work.keymgr_dpe_ral_pkg(fast)
+# Loading work.lc_ctrl_reg_pkg(fast)
+# Loading work.lc_ctrl_state_pkg(fast)
+# Loading work.lc_ctrl_pkg(fast)
+# Loading work.prim_alert_pkg(fast)
+# Loading work.sec_cm_pkg(fast)
+# Loading work.csr_utils_pkg(fast)
+# Loading work.dv_lib_pkg(fast)
+# Loading work.push_pull_agent_pkg(fast)
+# Loading work.alert_agent_pkg(fast)
+# Loading work.mem_model_pkg(fast)
+# Loading work.prim_secded_pkg(fast)
+# Loading work.tlul_pkg(fast)
+# Loading work.tl_agent_pkg(fast)
+# Loading work.cip_base_pkg(fast)
+# Loading work.keymgr_dpe_env_pkg(fast)
+# Loading work.keymgr_dpe_test_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.common_ifs_pkg(fast)
+# Loading work.clk_rst_if(fast__2)
+# Loading work.rst_shadowed_if(fast__2)
+# Loading work.pins_if(fast__2)
+# Loading work.tl_if(fast__2)
+# Loading work.rom_ctrl_pkg(fast)
+# Loading work.keymgr_dpe_if(fast__2)
+# Loading work.kmac_app_if(fast__2)
+# Loading work.entropy_src_pkg(fast)
+# Loading work.csrng_reg_pkg(fast)
+# Loading work.csrng_pkg(fast)
+# Loading work.edn_pkg(fast)
+# Loading work.keymgr_dpe(fast)
+# Loading work.prim_sec_anchor_const(fast)
+# Loading work.prim_const_sec(fast)
+# Loading work.prim_subreg_pkg(fast)
+# Loading work.keymgr_dpe_reg_top(fast)
+# Loading work.tlul_cmd_intg_chk(fast)
+# Loading work.prim_secded_inv_64_57_dec(fast)
+# Loading work.tlul_data_integ_dec(fast)
+# Loading work.prim_secded_inv_39_32_dec(fast)
+# Loading work.prim_reg_we_check(fast)
+# Loading work.prim_buf(fast)
+# Loading work.prim_onehot_check(fast)
+# Loading work.prim_onehot_check_if(fast__1)
+# Loading work.tlul_rsp_intg_gen(fast)
+# Loading work.prim_secded_inv_64_57_enc(fast)
+# Loading work.tlul_data_integ_enc(fast)
+# Loading work.prim_secded_inv_39_32_enc(fast)
+# Loading work.tlul_adapter_reg(fast)
+# Loading work.tlul_rsp_intg_gen(fast__1)
+# Loading work.tlul_err(fast)
+# Loading work.prim_subreg(fast)
+# Loading work.prim_subreg_arb(fast)
+# Loading work.prim_subreg(fast__1)
+# Loading work.prim_subreg_arb(fast__1)
+# Loading work.prim_subreg_ext(fast)
+# Loading work.prim_subreg(fast__2)
+# Loading work.prim_subreg_arb(fast__2)
+# Loading work.prim_subreg_shadow(fast)
+# Loading work.prim_subreg_arb(fast__3)
+# Loading work.prim_subreg(fast__3)
+# Loading work.prim_subreg_shadow(fast__1)
+# Loading work.prim_subreg(fast__4)
+# Loading work.prim_subreg_shadow(fast__2)
+# Loading work.prim_subreg_shadow(fast__3)
+# Loading work.prim_subreg_arb(fast__4)
+# Loading work.prim_subreg(fast__5)
+# Loading work.prim_subreg(fast__6)
+# Loading work.prim_subreg_arb(fast__5)
+# Loading work.prim_subreg_shadow(fast__4)
+# Loading work.prim_subreg(fast__7)
+# Loading work.prim_subreg_arb(fast__6)
+# Loading work.prim_subreg(fast__8)
+# Loading work.prim_subreg_arb(fast__7)
+# Loading work.prim_subreg(fast__9)
+# Loading work.prim_subreg_arb(fast__8)
+# Loading work.prim_subreg_ext(fast__1)
+# Loading work.prim_subreg_ext(fast__2)
+# Loading work.prim_subreg(fast__10)
+# Loading work.prim_subreg_arb(fast__9)
+# Loading work.prim_subreg(fast__11)
+# Loading work.prim_subreg(fast__12)
+# Loading work.prim_subreg_arb(fast__10)
+# Loading work.prim_subreg(fast__13)
+# Loading work.prim_subreg_arb(fast__11)
+# Loading work.prim_lc_sync(fast)
+# Loading work.prim_flop_2sync(fast)
+# Loading work.prim_cdc_rand_delay(fast)
+# Loading work.prim_flop(fast)
+# Loading work.prim_sec_anchor_buf(fast)
+# Loading work.prim_buf(fast__1)
+# Loading work.keymgr_dpe_reseed_ctrl(fast)
+# Loading work.prim_edn_req(fast)
+# Loading work.prim_sync_reqack_data(fast)
+# Loading work.prim_sync_reqack(fast)
+# Loading work.prim_flop_2sync(fast__1)
+# Loading work.prim_cdc_rand_delay(fast__1)
+# Loading work.prim_flop(fast__1)
+# Loading work.prim_packer_fifo(fast)
+# Loading work.prim_count_pkg(fast)
+# Loading work.prim_count(fast)
+# Loading work.prim_flop(fast__2)
+# Loading work.prim_flop(fast__3)
+# Loading work.prim_count_if(fast__1)
+# Loading work.prim_cipher_pkg(fast)
+# Loading work.prim_lfsr(fast)
+# Loading work.keymgr_dpe_ctrl(fast)
+# Loading work.prim_count(fast__1)
+# Loading work.prim_flop(fast__4)
+# Loading work.prim_flop(fast__5)
+# Loading work.prim_count_if(fast__2)
+# Loading work.prim_mubi4_sender(fast)
+# Loading work.prim_flop(fast__6)
+# Loading work.prim_sparse_fsm_flop(fast)
+# Loading work.prim_flop(fast__7)
+# Loading work.prim_sparse_fsm_flop_if(fast__1)
+# Loading work.keymgr_dpe_op_state_ctrl(fast)
+# Loading work.prim_sparse_fsm_flop(fast__1)
+# Loading work.prim_flop(fast__8)
+# Loading work.prim_sparse_fsm_flop_if(fast__2)
+# Loading work.keymgr_dpe_data_en_state(fast)
+# Loading work.prim_sparse_fsm_flop(fast__2)
+# Loading work.prim_flop(fast__9)
+# Loading work.keymgr_dpe_err(fast)
+# Loading work.keymgr_dpe_ctrl_if(fast__2)
+# Loading work.keymgr_dpe_cfg_en(fast)
+# Loading work.keymgr_dpe_input_checks(fast)
+# Loading work.prim_msb_extend(fast)
+# Loading work.prim_msb_extend(fast__1)
+# Loading work.keymgr_dpe_kmac_if(fast)
+# Loading work.prim_count(fast__2)
+# Loading work.prim_flop(fast__10)
+# Loading work.prim_flop(fast__11)
+# Loading work.prim_count_if(fast__3)
+# Loading work.prim_sparse_fsm_flop(fast__3)
+# Loading work.prim_flop(fast__12)
+# Loading work.keymgr_dpe_sideload_key_ctrl(fast)
+# Loading work.prim_sparse_fsm_flop(fast__4)
+# Loading work.prim_flop(fast__13)
+# Loading work.prim_mubi4_sync(fast)
+# Loading work.keymgr_dpe_sideload_key(fast)
+# Loading work.keymgr_dpe_sideload_key(fast__1)
+# Loading work.prim_mubi4_sync(fast__1)
+# Loading work.prim_sec_anchor_buf(fast__1)
+# Loading work.prim_buf(fast__2)
+# Loading work.prim_intr_hw(fast)
+# Loading work.prim_alert_sender(fast)
+# Loading work.prim_sec_anchor_buf(fast__2)
+# Loading work.prim_buf(fast__3)
+# Loading work.prim_diff_decode(fast)
+# Loading work.prim_flop_2sync(fast__2)
+# Loading work.prim_flop(fast__14)
+# Loading work.prim_sec_anchor_flop(fast)
+# Loading work.prim_flop(fast__15)
+# Loading work.prim_alert_sender(fast__1)
+# Loading work.cip_lc_tx_cov_if(fast__1)
+# Loading work.tlul_assert(fast)
+# Loading work.keymgr_dpe_csr_assert_fpv(fast)
+# Loading work.alert_if(fast__2)
+# Loading work.clk_rst_if(fast__3)
+# Loading work.push_pull_if(fast__2)
+# Compiling /tmp/kthakkar@VFSRV02_dpi_749315/linux_x86_64_gcc-10.3.0/exportwrapper.c
+# Loading /tmp/kthakkar@VFSRV02_dpi_749315/linux_x86_64_gcc-10.3.0/vsim_auto_compile.so
+# Loading /cadtools/mentor/Questa_2025.2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# do /home/kthakkar/opentitan_new/opentitan/hw/dv/tools/questa/sim.tcl
+# 0
+# 0
+tb.dut.u_lfsr.p_randomize_default_seed: DefaultSeed = 0x22d326255bd24320, DefaultSeedLocal = 0x2b79f592f81dffbf
+UVM_INFO @ 0 ps: reporter [RNTST] Running test keymgr_dpe_base_test...
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 0 ps  Iteration: 12  Process: /uvm_pkg::uvm_phase::m_run_phases/#FORK#2213_7feff3d2167 File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_dv_lib_0/dv_base_env.sv Line: 91
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 0 ps  Iteration: 54  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48a1 File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 0 ps  Iteration: 54  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48db File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 111703 ps  Iteration: 1  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48db File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 111703 ps  Iteration: 1  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48a1 File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 10668963 ps  Iteration: 3  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48a1 File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 10668963 ps  Iteration: 3  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::check_alerts/#FORK#305_7feff3d48db File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 320
+process_tl_access: a csr salt_0 was received that isn't handled
+process_tl_access: a csr salt_0 was received that isn't handled
+process_tl_access: a csr key_version was received that isn't handled
+process_tl_access: a csr key_version was received that isn't handled
+process_tl_access: a csr control_shadowed was received that isn't handled
+process_tl_access: a csr control_shadowed was received that isn't handled
+process_tl_access: a csr control_shadowed was received that isn't handled
+process_tl_access: a csr control_shadowed was received that isn't handled
+UVM_INFO @  21668985 ps: (keymgr_dpe_scoreboard.sv:1659) uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] get_key_slots '{src_slot:2, dst_slot:0}
+UVM_INFO @  21668985 ps: (keymgr_dpe_scoreboard.sv:778) uvm_test_top.env.scoreboard [uvm_test_top.env.scoreboard] Start: At StWorkDpeReset, OpDpeGenSwOut is issued
+** Warning: (vsim-3829) Non-existent associative array entry. Returning default value.
+   Time: 22502320 ps  Iteration: 4  Process: /cip_base_pkg::cip_base_scoreboard #(keymgr_dpe_ral_pkg::keymgr_dpe_reg_block, keymgr_dpe_env_pkg::keymgr_dpe_env_cfg, keymgr_dpe_env_pkg::keymgr_dpe_env_cov)::process_alert_fifos/#FORK#241_7feff3d48af File: /home/kthakkar/opentitan_new/opentitan/scratch/master/keymgr_dpe-sim-questa/default/fusesoc-work/src/lowrisc_dv_cip_lib_0/cip_base_scoreboard.sv Line: 285
+UVM_ERROR @  24168990 ps: (keymgr_dpe_base_vseq.sv:337) [uvm_test_top.env.virtual_sequencer.keymgr_dpe_smoke_vseq] Check failed ral.op_status.status.get_mirrored_value() == exp_status (0 [0x0] vs 3 [0x3]) 
+UVM_INFO @  24168990 ps: (uvm_report_catcher.svh:705) [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO @  24168990 ps: (uvm_report_server.svh:847) [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+Quit count reached!
+Quit count :     1 of     1
+** Report counts by severity
+UVM_INFO :    4
+UVM_WARNING :    0
+UVM_ERROR :    1
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVM/REPORT/CATCHER]     1
+[uvm_test_top.env.scoreboard]     2
+[uvm_test_top.env.virtual_sequencer.keymgr_dpe_smoke_vseq]     1
+
+
+TEST FAILED CHECKS
+ _____         _      __       _ _          _ _ 
+|_   _|__  ___| |_   / _| __ _(_) | ___  __| | |
+  | |/ _ \/ __| __| | |_ / _` | | |/ _ \/ _` | |
+  | |  __/\__ \ |_  |  _| (_| | | |  __/ (_| |_|
+  |_|\___||___/\__| |_|  \__,_|_|_|\___|\__,_(_)
+
+** Note: $finish    : /cadtools/mentor/Questa_2025.2/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(135)
+   Time: 24168990 ps  Iteration: 6  Region: /uvm_pkg::uvm_sequence_base::start
+End time: 12:54:58 on Oct 13,2026, Elapsed time: 0:00:02
+Errors: 0, Warnings: 8
+End time: 12:54:58 on Oct 13,2026, Elapsed time: 0:00:03
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vsim: Errors:   0, Warnings:   8
+  Totals: Errors:   0, Warnings:   8

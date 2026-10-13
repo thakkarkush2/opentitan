@@ -1,0 +1,5 @@
+files_root: /home/kthakkar/opentitan_new/opentitan/hw/ip/keymgr_dpe/dv/sva
+gapi: '1.0'
+parameters:
+  spec: ../../data/keymgr_dpe.hjson
+vlnv: lowrisc:dv:keymgr_dpe_sva-csr_assert_gen:0.1

@@ -1,0 +1,6 @@
+files_root: /home/kthakkar/opentitan_new/opentitan/hw/ip/uart/dv/env
+gapi: '1.0'
+parameters:
+  name: uart
+  ip_hjson: ../../data/uart.hjson
+vlnv: lowrisc:dv:uart_env-ral:0.1

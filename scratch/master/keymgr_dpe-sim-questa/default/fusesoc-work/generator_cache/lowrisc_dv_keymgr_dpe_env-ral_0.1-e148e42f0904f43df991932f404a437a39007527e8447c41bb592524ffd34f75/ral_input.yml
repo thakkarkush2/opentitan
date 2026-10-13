@@ -1,0 +1,6 @@
+files_root: /home/kthakkar/opentitan_new/opentitan/hw/ip/keymgr_dpe/dv/env
+gapi: '1.0'
+parameters:
+  name: keymgr_dpe
+  ip_hjson: ../../data/keymgr_dpe.hjson
+vlnv: lowrisc:dv:keymgr_dpe_env-ral:0.1

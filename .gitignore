@@ -46,7 +46,7 @@ irun.key
 *.fsdb
 *.rc
 out/
-scratch/
+#scratch/
 ucli.key
 novas.conf
 verdiLog/
