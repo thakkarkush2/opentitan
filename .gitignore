@@ -35,7 +35,7 @@ mrdc.his
 *.jou
 
 # Simulation Results
-*.log
+#*.log
 vdCovLog/
 INCA_libs/
 *.shm/

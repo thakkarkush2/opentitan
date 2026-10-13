@@ -376,7 +376,7 @@ class keymgr_dpe_scoreboard extends cip_base_scoreboard #(
       end
       // Should occur when a valid OpDpeGenSwOut is issued in the StWorkDpeAvailable state
       UpdateSwOut: begin
-        if (!get_fault_err && !get_invalid_op()) begin
+        if (!get_fault_err() && !get_invalid_op()) begin
           bit [keymgr_dpe_pkg::Shares-1:0][DIGEST_SHARE_WORD_NUM-1:0][TL_DW-1:0] sw_share_output;
           // digest is 512 bits wide while SW output is only 256, need to truncate it
           sw_share_output = {txn.m_rsp.m_digest_s1[keymgr_dpe_pkg::KeyWidth-1:0],
@@ -449,9 +449,9 @@ class keymgr_dpe_scoreboard extends cip_base_scoreboard #(
     if (cfg.en_cov && cfg.keymgr_dpe_vif.get_keymgr_dpe_en()) begin
       compare_op_e key_version_cmp;
 
-      if (`gmv(ral.key_version[0]) > get_current_max_version) begin
+      if (`gmv(ral.key_version[0]) > get_current_max_version()) begin
         key_version_cmp = CompareOpGt;
-      end else if (`gmv(ral.key_version[0]) == get_current_max_version) begin
+      end else if (`gmv(ral.key_version[0]) == get_current_max_version()) begin
         key_version_cmp = CompareOpEq;
       end else begin
         key_version_cmp = CompareOpLt;
